@@ -1,0 +1,193 @@
+/*
+Theme Name: Maverick
+Theme URI: http://mkaiser.io
+Description: Personal theme for my website
+Author: Matthew Kaiser
+Author URI: http://mkaiser.io
+Version: 1.0
+Tags: 
+
+License:
+License URI:
+
+General comments (optional).
+*/
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Structure */
+
+html {
+	margin: 0px !important;
+}
+
+body {
+	background: #e3e3e3;
+	color: #3c3c3c;
+	/*font: 16px Georgia, serif;*/
+	font-family: 'Open sans', Verdana;
+	font-weight: 300;
+}
+
+#container {
+	overflow: auto;
+}
+
+header {
+	display: none;
+}
+
+main {
+	z-index: 5;
+	display: block;
+	position: relative;
+	padding-left: 100px;
+	padding-right: 350px;
+	padding-top: 35px;
+	padding-bottom: 25px;
+	margin: 0px;
+	max-width: 900px;
+}
+
+#sidebar {
+	z-index: 10;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: #3481e0;
+	width: 300px;
+	overflow: auto;
+	box-shadow: 0px 0px 25px rgba(0,0,0,.25);
+}
+
+#logo {
+	margin: 20px 0px;
+	width: 100%;
+}
+
+#matt-pic {
+	width: 200px;
+	height: 200px;
+	margin: 10px auto 15px;
+	border-radius: 100px;
+	overflow: hidden;
+}
+
+#matt-pic img {
+	margin: 0px -43px;
+}
+
+#name {
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	padding: 15px;
+}
+
+#bio {
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	padding: 15px;
+}
+
+#social-links {
+	font-size: 40px;
+	text-align: center;
+	padding: 10px;
+}
+
+#social-links a {
+	color: #fff;
+	text-decoration: none;
+	transition: .1s;
+}
+
+#social-links a:hover {
+	color: rgba(255,255,255,.5);
+}
+
+nav {
+	z-index: 15;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	background-color: #e6a916;
+	width: 50px;
+	overflow: hidden;
+	box-shadow: 0px 0px 30px rgba(0,0,0,.15);
+}
+nav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+nav li {
+	padding: 0px;
+	list-style-type: none;
+	white-space: nowrap;
+}
+
+nav a {
+	text-decoration: none;
+	display: block;
+}
+
+nav a:hover {
+	background-color: #F0B321;
+}
+
+.nav_button {
+	width: 34px;
+	margin: 8px;
+	margin-left: 8px;
+}
+
+.nav_title {
+	font-family: 'Open Sans', verdana;
+	font-size: 25px;
+	color: #fff;
+	display: inline-block;
+	margin: 0px 8px;
+	vertical-align: top;
+	padding-top: 12px;
+}
+
+article {
+	margin: 0px 0px 38px;
+	border-bottom: 2px dashed #ccc;
+	padding: 0px 0px 38px;
+}
+
+article.list {
+	padding: 35px 0px 38px;
+	margin: 0px;
+	border-bottom: 2px dashed #ccc;
+}
+
+
+/* Text Rules */
+h1 {font-size: 45px;}
+h2 {font-size: 30px;}
+h3 {font-size: 18px;}
+
+date {
+	color: #7C96A7;
+	font-size: 16px;
+	margin: 15px 0px;
+	display: block;
+}
+
+.the_post {
+	font-size: 18px;
+	line-height: 25px;
+	margin: 15px 0px;
+}
+
+a {
+	color: #3481e0;
+}

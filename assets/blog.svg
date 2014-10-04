@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 560 560" enable-background="new 0 0 560 560" xml:space="preserve">
+<g id="orange">
+	<rect x="-1311.5" y="-59.8" display="none" fill="#E6A916" width="2712.8" height="686.5"/>
+</g>
+<g id="home">
+</g>
+<g id="about">
+</g>
+<g id="blog_1">
+	<circle fill="none" stroke="#FFFFFF" stroke-width="30" stroke-miterlimit="10" cx="279.8" cy="279.9" r="258.5"/>
+	<circle fill="#FFFFFF" cx="163" cy="310.3" r="42"/>
+	<circle fill="#FFFFFF" cx="280" cy="310.3" r="42"/>
+	<circle fill="#FFFFFF" cx="400" cy="310.3" r="42"/>
+</g>
+<g id="blog_2" display="none">
+	
+		<circle display="inline" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-miterlimit="10" cx="279.8" cy="279.9" r="258.5"/>
+	<g display="inline">
+		<path fill="#FFFFFF" d="M154.8,317.8L130.3,392H98.8l80.2-235.9h36.8L296.2,392h-32.5l-25.2-74.2H154.8z M232.1,294L209,226.1
+			c-5.2-15.4-8.8-29.4-12.2-43.1h-0.7c-3.5,14-7.3,28.4-11.9,42.7L161.1,294H232.1z"/>
+		<path fill="#FFFFFF" d="M425,392l-2.5-21.4h-1.1c-9.4,13.3-27.7,25.2-51.8,25.2c-34.3,0-51.8-24.2-51.8-48.7
+			c0-41,36.4-63.4,101.9-63v-3.5c0-14-3.8-39.2-38.5-39.2c-15.8,0-32.2,4.9-44.1,12.6l-7-20.3c14-9.1,34.3-15.1,55.7-15.1
+			c51.8,0,64.4,35.4,64.4,69.3v63.4c0,14.7,0.7,29.1,2.8,40.6H425z M420.4,305.5c-33.6-0.7-71.8,5.2-71.8,38.2
+			c0,20,13.3,29.4,29.1,29.4c22,0,36.1-14,41-28.4c1-3.1,1.8-6.7,1.8-9.8V305.5z"/>
+	</g>
+</g>
+<g id="blog_3" display="none">
+	
+		<circle display="inline" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-miterlimit="10" cx="279.8" cy="279.9" r="258.5"/>
+	<g display="inline">
+		<path fill="#FFFFFF" d="M173.7,223.7v75.5H104v-59.6c0-32.3,3.9-55.6,11.6-70.1c10.1-19.3,26.1-33.8,48.1-43.7l15.9,25.3
+			c-13.3,5.5-23,13.8-29.3,24.8c-6.3,11-9.8,26.9-10.5,47.9H173.7z M285.8,223.7v75.5H216v-59.6c0-32.3,3.9-55.6,11.6-70.1
+			c10.1-19.3,26.1-33.8,48.1-43.7l15.9,25.3c-13.3,5.5-23,13.8-29.3,24.8c-6.3,11-9.8,26.9-10.5,47.9H285.8z"/>
+	</g>
+</g>
+<g id="menu">
+</g>
+</svg>

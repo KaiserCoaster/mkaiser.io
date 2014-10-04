@@ -1,0 +1,107 @@
+/*
+Theme Name: Maverick
+Theme URI: http://mkaiser.io
+Description: Personal theme for my website
+Author: Matthew Kaiser
+Author URI: http://mkaiser.io
+Version: 1.0
+Tags: 
+
+License:
+License URI:
+
+General comments (optional).
+*/
+
+/* Structure */
+
+
+main {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 35px;
+	padding-bottom: 25px;
+	margin: 0px;
+	margin-top: 65px;
+}
+
+header {
+	display: table;
+	width: 100%;
+	position: fixed;
+	z-index: 20;
+	background-color: #3481e0;
+	box-shadow: 0px 0px 25px rgba(0,0,0,.25);
+}
+
+#mobile_menu {
+	/*background-color: #e6a916; */
+	display: table-cell;
+	height: 65px;
+	width: 65px;
+}
+
+#mobile_logo {
+	height: 65px;
+	display: table-cell;
+	vertical-align: top;
+	text-align: center;
+	padding-right: 65px;
+}
+
+#menu_button {
+	width: 50px;
+	margin: 8px 0px 0px 8px;
+}
+
+#m_logo {
+	height: 100%;
+	text-align: center;
+}
+
+nav {
+	width: 0px;
+	z-index: 25;
+}
+
+nav li {
+}
+
+.nav_button {
+	width: 50px;
+	margin: 8px;
+}
+
+.nav_title {
+	font-size: 40px;
+	margin: 0px 8px;
+	padding-top: 12px;
+}
+
+
+#sidebar {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding: 30px 0px;
+	background-color: #79a7e0;
+}
+
+#logo {
+	display: none;
+}
+
+#name {
+	font-size: 40px;
+	padding: 15px;
+}
+
+#bio {
+	font-size: 25px;
+	padding: 15px;
+}
+
+#social-links {
+	font-size: 60px;
+	padding: 10px;
+}

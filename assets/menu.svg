@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 560 560" enable-background="new 0 0 560 560" xml:space="preserve">
+<g id="orange">
+	<rect x="-1891.5" y="-59.8" display="none" fill="#E6A916" width="2712.8" height="686.5"/>
+</g>
+<g id="home">
+</g>
+<g id="about">
+</g>
+<g id="blog_1" display="none">
+</g>
+<g id="blog_2" display="none">
+</g>
+<g id="blog_3">
+</g>
+<g id="menu">
+	<circle id="circle" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-miterlimit="10" cx="279.8" cy="283.9" r="258.5"/>
+	<line id="bottom" fill="none" stroke="#FFFFFF" stroke-width="40" stroke-miterlimit="10" x1="125" y1="373" x2="434" y2="373"/>
+	<line id="mid" fill="none" stroke="#FFFFFF" stroke-width="40" stroke-miterlimit="10" x1="125" y1="283" x2="434" y2="283"/>
+	<line id="top" fill="none" stroke="#FFFFFF" stroke-width="40" stroke-miterlimit="10" x1="125" y1="193" x2="434" y2="193"/>
+</g>
+</svg>

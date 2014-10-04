@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 560 560" enable-background="new 0 0 560 560" xml:space="preserve">
+<g id="orange" display="none">
+	<rect x="-2471.5" y="-59.8" display="inline" fill="#E6A916" width="3201.1" height="686.5"/>
+</g>
+<g id="home">
+</g>
+<g id="about">
+</g>
+<g id="blog_1">
+</g>
+<g id="blog_2" display="none">
+</g>
+<g id="blog_3" display="none">
+</g>
+<g id="menu">
+</g>
+<g id="close">
+	<circle id="circle_1_" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-miterlimit="10" cx="279.8" cy="279.9" r="258.5"/>
+	<rect x="148.5" y="148.4" display="none" width="131.5" height="131.5"/>
+	<rect x="279.8" y="279.9" display="none" width="131.5" height="131.5"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="30" stroke-miterlimit="10" x1="148.5" y1="148.4" x2="411.3" y2="411.5"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="30" stroke-miterlimit="10" x1="411.3" y1="148.4" x2="148.5" y2="411.5"/>
+</g>
+</svg>

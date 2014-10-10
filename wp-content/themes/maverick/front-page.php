@@ -12,10 +12,14 @@
 		$args = array( 'numberposts' => '5' );
 		$recent_posts = wp_get_recent_posts( $args );
 		foreach( $recent_posts as $recent ){
-			echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ' . mysql2date('j M Y', $recent['post_date']);
-			echo "<pre>";
-			print_r($recent);
-			echo "</pre>"
+			?>
+			
+			<li>
+				<a href="<?=get_permalink($recent["ID"]);?>"><?=$recent["post_title"];?></a>
+				<span><?=mysql2date('j M Y', $recent['post_date']);?></span>
+			</li>
+			
+			<?php
 		}
 		?>
 		

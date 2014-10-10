@@ -1,6 +1,6 @@
 <div id="sidebar">
 
-	<a href="#"><img src="/assets/MKaiserLogo2.svg" id="logo" onerror="this.onerror=null; this.src='/assets/MKaiserLogo.png'" /></a>
+	<a href="#" id="logo_link"><img src="/assets/MKaiserLogo2.svg" id="logo" onerror="this.onerror=null; this.src='/assets/MKaiserLogo.png'" /></a>
 	
 	<div id="matt-pic">
 		<img src="/assets/matt.jpg" />

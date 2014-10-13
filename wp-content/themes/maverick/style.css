@@ -50,6 +50,17 @@ main {
 	max-width: 900px;
 }
 
+footer {
+	z-index: 5;
+	display: block;
+	position: relative;
+	padding: 30px 350px 30px 100px;
+	margin: 0px;
+	font-size: 12px;
+	color: #949494;
+	background-color: #DDD;
+}
+
 #sidebar {
 	z-index: 10;
 	position: fixed;
@@ -99,7 +110,7 @@ main {
 }
 
 #social-links {
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
 	padding: 30px 15px 0px;
 }
@@ -108,15 +119,24 @@ main {
 	color: rgba(255,255,255,.6);
 	text-decoration: none;
 	transition: .2s;
+	padding: 5px 0px 0px;
+	display: inline-block;
+	border: 1px solid;
+	height: 35px;
+	text-align: center;
+	border-radius: 21px;
+	margin: 0px;
+	width: 40px;
 }
 
 #social-links a:hover {
 	color: rgba(255,255,255,1);
 	transition: .2s;
+	background-color: rgba(0,0,0,.1);
 }
 
 nav {
-	z-index: 15;
+	z-index: 25;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -126,6 +146,18 @@ nav {
 	overflow: hidden;
 	box-shadow: 0px 0px 30px rgba(0,0,0,.15);
 }
+
+#nav_remainder {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgba(0,0,0,.5);
+	z-index: 20;
+	display: none;
+}
+
 nav ul {
 	margin: 0px;
 	padding: 0px;
@@ -141,10 +173,12 @@ nav li {
 nav a {
 	text-decoration: none;
 	display: block;
+	transition: .3s;
 }
 
 nav a:hover {
 	background-color: #F0B321;
+	transition: .1s;
 }
 
 .nav_button {
@@ -163,6 +197,47 @@ nav a:hover {
 	padding-top: 12px;
 }
 
+footer ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+footer ul li {
+	list-style-type: none;
+	margin: 0px 10px 0px 0px;
+	padding: 0px;
+	display: inline-block;
+}
+
+footer ul li a {
+	text-decoration: none;
+}
+
+
+
+
+/* Home page */
+
+#recent_blogs {
+	font-size: 0px;
+	margin-left: -2.5%;
+}
+
+#recent_blogs li {
+	display: inline-block;
+	font-size: 16px;
+	font-size: 1rem;
+	width: 30.83%;
+	background-color: #fff;
+	margin: 0 0 2.5% 2.5%;
+	vertical-align: top;
+}
+
+
+
+/* Blog & Articles */
+
 article {
 	margin: 0px 0px 38px;
 	border-bottom: 2px dashed #ccc;
@@ -173,6 +248,10 @@ article.list {
 	padding: 35px 0px 38px;
 	margin: 0px;
 	border-bottom: 2px dashed #ccc;
+}
+
+article.list:last-of-type {
+	border: none;
 }
 
 

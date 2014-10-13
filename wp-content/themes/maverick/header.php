@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="600">
-    <meta name="viewport" content="width=500, initial-scale=1, maximum-scale=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 	<title><?php bloginfo('title') ?></title>
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" />
@@ -54,6 +54,7 @@
 					$("#menu-norm img").attr("src","/assets/close.svg");
 					$("nav").stop().animate({'width': open_width}, 'fast');
 					$(".nav_button").stop().animate({'margin-left': '16px'}, 'fast')/*.css({'margin-bottom': '7px'})*/;
+					$("#nav_remainder").fadeIn('fast');
 					//$("nav a").css({'border-bottom': '1px solid #FCC238'});
 				}
 				
@@ -70,6 +71,7 @@
 						$("nav").css("width", "");
 					});
 					$(".nav_button").stop().animate({'margin-left': '8px'}, 'fast')/*.css({'margin-bottom':'8px'})*/;
+					$("#nav_remainder").fadeOut('fast');
 					//$("nav a").css({'border-bottom': 'none'});
 				}
 		
@@ -145,5 +147,7 @@
 		</li>
 	</ul>
 </nav>
+
+<div id="nav_remainder"></div>
 
 <div id="container">

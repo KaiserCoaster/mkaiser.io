@@ -34,6 +34,11 @@ header {
 	box-shadow: 0px 0px 25px rgba(0,0,0,.25);
 }
 
+footer {
+	padding: 30px 25px;
+	font-size: 15px;
+}
+
 #mobile_menu {
 	/*background-color: #e6a916; */
 	display: table-cell;

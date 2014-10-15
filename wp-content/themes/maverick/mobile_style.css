@@ -123,3 +123,13 @@ nav li {
 	height: 52px;
 	text-align: center;
 }
+
+
+.grid {
+	margin-left: 0;
+}
+
+.grid li {
+	width: 95%;
+	margin: 0 2.5% 5%;
+}

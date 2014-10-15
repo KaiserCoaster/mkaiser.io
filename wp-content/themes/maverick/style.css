@@ -220,41 +220,56 @@ footer ul li a {
 
 /* Home page */
 
-#recent_blogs {
+.grid {
 	font-size: 0px;
 	margin-left: -2.5%;
 }
 
-#recent_blogs li {
+.grid li {
 	display: inline-block;
 	font-size: 16px;
 	font-size: 1rem;
 	width: 30.83%;
-	background-color: #f5f5f5;
 	margin: 0 0 2.5% 2.5%;
 	vertical-align: top;
 	box-shadow: 0px 1px 1px rgba(0,0,0,.1);
 }
 
+
+
+#recent_blogs li {
+	background-color: #f5f5f5;
+}
+
 #recent_blogs date {
 	text-align: center;
 	margin: 0px;
-	padding: 10px;
-	color: #ABABAB;
-	border-bottom: 1px dashed #D7D7D7;
+	padding: 8px;
+	color: #FFFFFF;
+	font-size: 13px;
+	background-color: #1AABEA;
 }
 
 #recent_blogs a {
 	display: block;
-	font-size: 24px;
-	padding: 15px;
+	font-size: 21px;
+	padding: 15px 10px;
 	text-decoration: none;
 	color: #1AABEA;
 	text-align: center;
+	transition: .2s;
 }
 
 #recent_blogs a:hover {
 	text-decoration: underline;
+	background-color: #fff;
+	transition: .2s;
+}
+
+
+#photography a {
+	font-size: 0px;
+	display: block;
 }
 
 

@@ -133,3 +133,16 @@ nav li {
 	width: 95%;
 	margin: 0 2.5% 5%;
 }
+
+@media (min-width : 650px) {
+	
+	.grid {
+		margin-left: -2.5%;
+	}
+
+	.grid li {
+		width: 47.5%;
+		margin: 0 0 2.5% 2.5%;
+	}
+
+}

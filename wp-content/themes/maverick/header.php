@@ -9,8 +9,8 @@
 	<title><?php bloginfo('title') ?></title>
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" />
-	<link rel="stylesheet" media="(max-width: 850px)" href="/wp-content/themes/maverick/mobile_style.css" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="(max-width: 1100px)" href="/wp-content/themes/maverick/mobile_style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:300,100|Raleway:300' rel='stylesheet' type='text/css'>
 	<link href='/css/foundation-icons.css' rel='stylesheet' type='text/css'>
 	<?php wp_head() ?>
 	<script type="text/javascript">

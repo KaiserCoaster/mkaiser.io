@@ -53,19 +53,31 @@
 			<h2 class="bottom-margin">Featured Projects</h2>
 			<ul id="featured_projects" class="grid">
 				<li>
-					<div>
-						<a href="#">gadv.com</a>
-					</div>
+					<a href="#">
+						<div class="project-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-9.41.08-PM-300x169.png" width="100%" /></div>
+						<div class="project-text">
+							gadv.com
+							<div class="project-description">Fan-site for Six Flags Great Adventure</div>
+						</div>
+					</a>
 				</li>
 				<li>
-					<div>
-						<a href="#">Online Day 2014</a>
-					</div>
+					<a href="#">
+						<div class="project-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-10.33.03-PM-300x169.png" width="100%" /></div>
+						<div class="project-text">
+							Online Day 2014
+							<div class="project-description">Event held at Six Flags</div>
+						</div>
+					</a>
 				</li>
 				<li>
-					<div>
-						<a href="#">RUcheesy</a>
-					</div>
+					<a href="#">
+						<div class="project-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-11.01.37-PM-300x169.png" width="100%" /></div>
+						<div class="project-text">
+							RUcheesy
+							<div class="project-description">Where is the Mac & Cheese at Rutgers?</div>
+						</div>
+					</a>
 				</li>
 			</ul>
 		</div>

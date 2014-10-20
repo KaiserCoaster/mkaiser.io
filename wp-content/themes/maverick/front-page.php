@@ -11,7 +11,7 @@
 		
 		<div class="section">
 			<h2 class="bottom-margin">Recent Blog Posts</h2>
-			<ul id="recent_blogs" class="grid">
+			<ul id="recent_blogs" class="grid grid-img">
 				<?php
 				$args = array( 'numberposts' => '5' );
 				$recent_posts = wp_get_recent_posts( $args );
@@ -20,10 +20,10 @@
 					
 					<li>
 						<a href="<?=get_permalink($recent["ID"]);?>">
-							<div class="recent-blog-image"></div>
-							<div class="recent-blog-text">
+							<div class="grid-image"></div>
+							<div class="grid-text">
 								<?=$recent["post_title"];?>
-								<date><?=mysql2date('j M Y', $recent['post_date']);?></date>
+								<date class="grid-description"><?=mysql2date('j M Y', $recent['post_date']);?></date>
 							</div>
 						</a>
 					</li>
@@ -33,28 +33,28 @@
 				?>
 				<li>
 					<a href="#">
-						<div class="recent-blog-image"></div>
-						<div class="recent-blog-text">
+						<div class="grid-image"></div>
+						<div class="grid-text">
 							This is a title
-							<date>8 June 2014</date>
+							<date class="grid-description">8 June 2014</date>
 						</div>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="recent-blog-image"></div>
-						<div class="recent-blog-text">
+						<div class="grid-image"></div>
+						<div class="grid-text">
 							This is a title
-							<date>22 January 2014</date>
+							<date class="grid-description">22 January 2014</date>
 						</div>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="recent-blog-image"></div>
-						<div class="recent-blog-text">
+						<div class="grid-image"></div>
+						<div class="grid-text">
 							Daily GitHub Commits For a Year
-							<date>22 January 2014</date>
+							<date class="grid-description">22 January 2014</date>
 						</div>
 					</a>
 				</li>
@@ -66,37 +66,37 @@
 			<ul id="featured_projects" class="grid">
 				<li>
 					<a href="#">
-						<div class="project-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-9.41.08-PM-300x169.png" width="100%" /></div>
-						<div class="project-text">
+						<div class="grid-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-9.41.08-PM-300x169.png" width="100%" /></div>
+						<div class="grid-text">
 							gadv.com
-							<div class="project-description">Fan-site for Six Flags Great Adventure</div>
+							<div class="grid-description">Fan-site for Six Flags Great Adventure</div>
 						</div>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="project-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-10.33.03-PM-300x169.png" width="100%" /></div>
-						<div class="project-text">
+						<div class="grid-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-10.33.03-PM-300x169.png" width="100%" /></div>
+						<div class="grid-text">
 							Online Day 2014
-							<div class="project-description">Event held at Six Flags</div>
+							<div class="grid-description">Event held at Six Flags</div>
 						</div>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="project-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-11.36.23-PM-300x169.png" width="100%" /></div>
-						<div class="project-text">
+						<div class="grid-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-11.36.23-PM-300x169.png" width="100%" /></div>
+						<div class="grid-text">
 							wishlist
-							<div class="project-description">Web app for making a wishlist</div>
+							<div class="grid-description">Web app for making a wishlist</div>
 						</div>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="project-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-11.20.25-PM-copy-300x169.png" width="100%" /></div>
-						<div class="project-text">
+						<div class="grid-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-11.20.25-PM-copy-300x169.png" width="100%" /></div>
+						<div class="grid-text">
 							RUcheesy
-							<div class="project-description">Where is the Mac & Cheese at Rutgers?</div>
+							<div class="grid-description">Where is the Mac & Cheese at Rutgers?</div>
 						</div>
 					</a>
 				</li>

@@ -1,6 +1,9 @@
 <?php get_header(); ?>
-	<div class="content-area">
-		<div id="container" class="site-content">
+
+<main>
+
+	<!--<div class="content-area">
+		<div id="container" class="site-content">-->
 			<div id="content" class="hentry">
 				<?php global $post, $wp_query;
 				$args = array(
@@ -13,7 +16,7 @@
 				$gllr_options = get_option( 'gllr_options' );
 				$gllr_download_link_title = addslashes( __( 'Download high resolution image', 'gallery' ) );
 				if ( $second_query->have_posts() ) : while ( $second_query->have_posts() ) : $second_query->the_post(); ?>
-					<h1 class="home_page_title entry-header"><?php the_title(); ?></h1>
+					<h1 class="home_page_title entry-header bottom-margin"><?php the_title(); ?></h1>
 					<div class="gallery_box_single entry-content">
 						<?php the_content(); 
 						$posts = get_posts( array(
@@ -86,11 +89,12 @@
 							<div class="return_link"><a href="<?php echo $gllr_options["return_link_url"]; ?>"><?php echo $gllr_options['return_link_text']; ?></a></div>
 						<?php }
 					} ?>
-					<?php comments_template(); ?>
+					<?php //comments_template(); ?>
+					<?php comments_template('', true); ?>
 				</div>			
-			</div>
-		</div>
-	<?php get_sidebar(); ?>
+			<!--</div>
+		</div>-->
+	<?php //get_sidebar(); ?>
 	<script type="text/javascript">
 		(function($){
 			$(document).ready(function(){
@@ -111,4 +115,5 @@
 			});
 		})(jQuery);
 	</script>
+</main>
 <?php get_footer(); ?>

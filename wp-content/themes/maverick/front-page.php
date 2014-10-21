@@ -97,7 +97,7 @@
 						</div>
 					</a>
 				</li>
-				<li>
+				<!--<li>
 					<a href="#">
 						<div class="grid-image">
 							<img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-11.20.25-PM-copy-300x169.png" width="100%" />
@@ -107,7 +107,7 @@
 							<div class="grid-description">Where is the Mac & Cheese at Rutgers?</div>
 						</div>
 					</a>
-				</li>
+				</li>-->
 			</ul>
 		</div>
 		

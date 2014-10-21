@@ -125,7 +125,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a href="/about-me/">
 				<img src="/assets/about.svg" class="nav_button" onerror="this.onerror=null; this.src='/assets/about.png'" />
 				<div class="nav_title">About Me</div>
 			</a>

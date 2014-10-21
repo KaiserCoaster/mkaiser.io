@@ -66,7 +66,9 @@
 			<ul id="featured_projects" class="grid">
 				<li>
 					<a href="#">
-						<div class="grid-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-9.41.08-PM-300x169.png" width="100%" /></div>
+						<div class="grid-image">
+							<img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-9.41.08-PM-300x169.png" width="100%" />
+						</div>
 						<div class="grid-text">
 							gadv.com
 							<div class="grid-description">Fan-site for Six Flags Great Adventure</div>
@@ -75,7 +77,9 @@
 				</li>
 				<li>
 					<a href="#">
-						<div class="grid-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-10.33.03-PM-300x169.png" width="100%" /></div>
+						<div class="grid-image">
+							<img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-10.33.03-PM-300x169.png" width="100%" />
+						</div>
 						<div class="grid-text">
 							Online Day 2014
 							<div class="grid-description">Event held at Six Flags</div>
@@ -84,7 +88,9 @@
 				</li>
 				<li>
 					<a href="#">
-						<div class="grid-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-11.36.23-PM-300x169.png" width="100%" /></div>
+						<div class="grid-image">
+							<img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-11.36.23-PM-300x169.png" width="100%" />
+						</div>
 						<div class="grid-text">
 							wishlist
 							<div class="grid-description">Web app for making a wishlist</div>
@@ -93,7 +99,9 @@
 				</li>
 				<li>
 					<a href="#">
-						<div class="grid-image"><img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-11.20.25-PM-copy-300x169.png" width="100%" /></div>
+						<div class="grid-image">
+							<img src="http://mkaiser.io/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-11.20.25-PM-copy-300x169.png" width="100%" />
+						</div>
 						<div class="grid-text">
 							RUcheesy
 							<div class="grid-description">Where is the Mac & Cheese at Rutgers?</div>
@@ -107,18 +115,18 @@
 			<h2 class="bottom-margin">Photography</h2>
 			<ul id="photography" class="grid">
 				<li>
-					<div>
-						<a href="#">
+					<a href="#">
+						<div class="grid-image">
 							<img src="http://mkaiser.io/wp-content/uploads/2014/08/edited-5475-300x200.jpg" width="100%" />
-						</a>
-					</div>
+						</div>
+					</a>
 				</li>
 				<li>
-					<div>
-						<a href="#">
+					<a href="#">
+						<div class="grid-image">
 							<img src="http://mkaiser.io/wp-content/uploads/2014/08/edited-5422-200x300.jpg" width="100%" />
-						</a>
-					</div>
+						</div>
+					</a>
 				</li>
 			</ul>
 		</div>

@@ -253,8 +253,7 @@ footer ul li a {
 }
 
 .grid .grid-image img {
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
+	border-radius: 3px;
 }
 
 .grid .grid-text {
@@ -290,14 +289,6 @@ footer ul li a {
 
 
 
-
-#photography a {
-	font-size: 0px;
-	display: block;
-}
-
-
-
 /* Blog & Articles */
 
 article {
@@ -326,6 +317,10 @@ article.list h2 a {
 h1 {font-size: 45px; color: #000;}
 h2 {font-size: 30px; color: #000;}
 h3 {font-size: 18px; color: #000;}
+
+p {
+	font-size: 17px;
+}
 
 .bottom-margin {
 	margin-bottom: 30px;

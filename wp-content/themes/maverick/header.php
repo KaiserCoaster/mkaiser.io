@@ -160,6 +160,12 @@
 				<div class="nav_title">Photography</div>
 			</a>
 		</li>
+		<li>
+			<a href="#">
+				<img src="/assets/contact.svg" class="nav_button" onerror="this.onerror=null; this.src='/assets/contact.png'" />
+				<div class="nav_title">Contact</div>
+			</a>
+		</li>
 	</ul>
 </nav>
 

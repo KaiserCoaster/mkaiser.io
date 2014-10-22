@@ -288,7 +288,6 @@ footer ul li a {
 
 
 
-
 /* Blog & Articles */
 
 article {
@@ -311,6 +310,23 @@ article.list h2 a {
 	font-family: 'Roboto Condensed', Verdana;
 	text-decoration: none;
 }
+
+
+
+
+
+/* Gallery */
+
+#content .gallery_box_single .gallery .gllr_image_block p {
+	border: none;
+}
+
+#content .gallery .gllr_image_block a img {
+	border-radius: 3px;
+	border: none;
+}
+
+
 
 
 /* Text Rules */

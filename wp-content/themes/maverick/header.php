@@ -46,7 +46,7 @@
 				function openNav() {
 					var open_width = "";
 					if($("header").is(":visible")) {
-						open_width = "350px";
+						open_width = "260px";
 					}
 					else {
 						open_width = "235px";

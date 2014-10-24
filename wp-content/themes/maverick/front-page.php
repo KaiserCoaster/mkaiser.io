@@ -111,6 +111,7 @@
 			</ul>
 		</div>
 		
+		<!-- Disable Photography section for now
 		<div class="section">
 			<h2 class="bottom-margin">Photography</h2>
 			<ul id="photography" class="grid">
@@ -130,6 +131,7 @@
 				</li>
 			</ul>
 		</div>
+		-->
 		
 		
 	<?php endwhile; ?>

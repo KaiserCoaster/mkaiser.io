@@ -317,11 +317,11 @@ article.list h2 a {
 
 /* Gallery */
 
-#content .gallery_box_single .gallery .gllr_image_block p {
+main #content .gallery_box_single .gallery .gllr_image_block p {
 	border: none;
 }
 
-#content .gallery .gllr_image_block a img {
+main #content .gallery .gllr_image_block a img {
 	border-radius: 3px;
 	border: none;
 }

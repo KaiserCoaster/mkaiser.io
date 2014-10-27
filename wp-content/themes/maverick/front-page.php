@@ -11,7 +11,7 @@
 		
 		<div class="section">
 			<h2 class="bottom-margin">Recent Blog Posts</h2>
-			<ul id="recent_blogs" class="grid grid-img">
+			<ul id="recent_blogs" class="grid">
 				<?php
 				$args = array( 'numberposts' => '5' );
 				$recent_posts = wp_get_recent_posts( $args );

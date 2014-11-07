@@ -11,8 +11,15 @@
 		
 	<?php endwhile; ?>
 	
-	-Contact form here-
-
+	<form id="contact">
+		<label for="name">Name</label>
+		<input id="name" name="name" type="text" />
+		<label for="email">Email</label>
+		<input id="email" name ="email" type="email" />
+		<label for="message">Message</label>
+		<textarea id="message" name="message"></textarea>
+		<input type="submit" value="Send" />
+	</form>
 </main>
 
 <?php get_footer() ?>

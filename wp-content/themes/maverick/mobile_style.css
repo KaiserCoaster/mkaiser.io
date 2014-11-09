@@ -148,6 +148,25 @@ nav li {
 
 }
 
+
+
+
+
+/* Contact Page */
+
+#contact-form input {
+	width: calc(100% - 12px);
+}
+
+#contact-form textarea {
+	width: calc(100% - 12px);
+}
+
+
+
+
+
+
 /* Text Rules */
 h1 {font-size: 38px;}
 h2 {font-size: 30px;}

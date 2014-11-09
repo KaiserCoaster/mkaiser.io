@@ -330,6 +330,50 @@ main #content .gallery .gllr_image_block a img {
 
 
 
+
+/* Contact Form */
+
+#contact-form {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#contact-form li {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	margin-bottom: 25px;
+}
+
+#contact-form label {
+	display: block;
+	margin-bottom: 8px;
+	color: #777;
+}
+
+#contact-form input {
+	font-size: 20px;
+	padding: 6px;
+	width: 65%;
+	border: none;
+	font-family: 'raleway';
+	border-radius: 2px;
+}
+
+#contact-form textarea {
+	font-size: 18px;
+	padding: 6px;
+	width: 65%;
+	border: none;
+	height: 150px;
+	font-family: 'raleway';
+	border-radius: 2px;
+}
+
+
+
+
 /* Text Rules */
 h1 {font-size: 45px; color: #000;}
 h2 {font-size: 30px; color: #000;}

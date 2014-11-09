@@ -6,20 +6,30 @@
 	
 		<div class="section">
 			<h2 class="bottom-margin"><?php the_title() ?></h2>
+			<form id="contact">
+				<ul id="contact-form">	
+					<li>
+						<label for="contact-name">Name</label>
+						<input id="contact-name" type="text" />
+					</li>
+					<li>
+						<label for="contact-email">Email</label>
+						<input id="contact-email" type="email" />
+					</li>
+					<li>
+						<label for="contact-message">Message</label>
+						<textarea id="contact-message"></textarea>
+					</li>
+					<li>
+						<input type="submit" value="Send" />
+					</li>
+				</ul>
+			</form>
 			<?php the_content() ?>
 		</div>
 		
 	<?php endwhile; ?>
 	
-	<form id="contact">
-		<label for="name">Name</label>
-		<input id="name" name="name" type="text" />
-		<label for="email">Email</label>
-		<input id="email" name ="email" type="email" />
-		<label for="message">Message</label>
-		<textarea id="message" name="message"></textarea>
-		<input type="submit" value="Send" />
-	</form>
 </main>
 
 <?php get_footer() ?>

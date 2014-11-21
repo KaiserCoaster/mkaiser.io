@@ -162,6 +162,18 @@ nav li {
 	width: calc(100% - 12px);
 }
 
+.contact-error-under {
+	width: calc(100% - 12px);
+}
+
+.contact-error {
+	width: calc(100% - 12px);
+}
+
+.contact-success {
+	width: calc(100% - 12px);
+}
+
 
 
 

@@ -359,6 +359,8 @@ main #content .gallery .gllr_image_block a img {
 	border: none;
 	font-family: 'raleway';
 	border-radius: 2px;
+	position: relative;
+	z-index: 100;
 }
 
 #contact-form textarea {
@@ -369,6 +371,70 @@ main #content .gallery .gllr_image_block a img {
 	height: 150px;
 	font-family: 'raleway';
 	border-radius: 2px;
+	position: relative;
+	display: block;
+	z-index: 100;
+	margin: 0px;
+}
+
+#contact-form .button {
+	background-color: #7FBCFA;
+	border: 1px solid #2BA1D5;
+	border-radius: 2px;
+	padding: 7px 25px;
+	width: auto;
+	color: #fff;
+	cursor: pointer;
+	transition: .2s;
+	vertical-align: top;
+}
+
+#contact-form .button:hover {
+	background-color: #6EB1F5;
+	transition: .2s;
+}
+
+#contact-loading {
+	display: inline;
+}
+
+#contact-loading img {
+	margin: 4px 0px 0px 10px;
+	display: none;
+}
+
+.contact-error-under {
+	background-color: #FF5E5E;
+	color: #fff;
+	padding: 8px 6px 7px;
+	margin-top: -2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	width: 65%;
+	font-size: 12px;
+	position: relative;
+	z-index: 50;
+	display: none;
+}
+
+.contact-error {
+	background-color: #FF5E5E;
+	color: #fff;
+	padding: 8px 6px 7px;
+	margin-top: 10px;
+	border-radius: 2px;
+	width: 65%;
+	display: none;
+}
+
+.contact-success {
+	background-color: #19CD88;
+	color: #fff;
+	padding: 8px 6px;
+	margin-top: 25px;
+	border-radius: 2px;
+	width: 65%;
+	display: none;
 }
 
 

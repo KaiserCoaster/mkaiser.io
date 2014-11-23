@@ -152,13 +152,54 @@ nav li {
 
 
 
-/* Contact Page */
+/* About me */
 
-#contact-form input {
-	width: calc(100% - 12px);
+#resume {
+	white-space: normal;
 }
 
-#contact-form textarea {
+#resume li#resume-thumbnail {
+	padding: 25px 0px 0px;
+	text-align: center;
+	display: block;
+}
+
+
+
+
+
+/* Gallery */
+
+#gallery.grid {
+	margin-left: -2.5%;
+}
+
+#gallery.grid li {
+	width: 47.5%;
+	margin: 0 0 2.5% 2.5%;
+}
+
+@media (min-width : 650px) {
+	
+	#gallery.grid {
+		margin-left: -2.5%;
+	}
+
+	#gallery.grid li {
+		width: 22.5%;
+		margin: 0 0 2.5% 2.5%;
+	}
+
+}
+
+
+
+
+
+
+/* Contact Page */
+
+#contact-form .textbox {
 	width: calc(100% - 12px);
 }
 

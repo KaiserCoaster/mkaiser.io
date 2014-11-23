@@ -9,9 +9,11 @@
 			<date>
 				<?php the_date(); ?>
 			</date>
-			<span class="the_post">
+			<span class="the_post margin-bottom">
 				<?php the_content(); ?>
 			</span>
+			
+			<a href="/blog/" class="blue-button top-margin">Return to Blog</a>
 		</article>
 		
 		<!--<?php the_permalink() ?>-->

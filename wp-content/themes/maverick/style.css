@@ -288,10 +288,58 @@ footer ul li a {
 
 
 
+
+/* About Me */
+
+#resume {
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+#resume li {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#resume img {
+	height: 100px;
+	box-shadow: 2px 2px 6px rgba(0,0,0,.1);
+}
+
+#resume li#resume-thumbnail {
+	padding: 25px 0px 25px 25px;
+	font-size: 0px;
+}
+
+#resume li#resume-text {
+	padding: 25px;
+}
+
+#resume-title {
+	font-family: 'raleway';
+	font-size: 22px;
+	margin-bottom: 6px;
+	display: block;
+}
+
+#resume-desc {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+
+
+
 /* Blog & Articles */
 
 article {
-	margin: 0px 0px 38px;
+	margin: 0px;
 	border-bottom: 2px dashed #ccc;
 	padding: 0px 0px 38px;
 }
@@ -317,14 +365,8 @@ article.list h2 a {
 
 /* Gallery */
 
-main #content .gallery_box_single .gallery .gllr_image_block p {
-	border: none;
-	margin: 5px 10px 5px 0;
-}
-
-main #content .gallery .gllr_image_block a img {
-	border-radius: 3px;
-	border: none;
+#gallery.grid li {
+	width: 17.5%; /* this value + 2.5 should = 25% */
 }
 
 
@@ -352,7 +394,7 @@ main #content .gallery .gllr_image_block a img {
 	color: #777;
 }
 
-#contact-form input {
+#contact-form .textbox {
 	font-size: 20px;
 	padding: 6px;
 	width: 65%;
@@ -361,37 +403,16 @@ main #content .gallery .gllr_image_block a img {
 	border-radius: 2px;
 	position: relative;
 	z-index: 100;
+	outline: none;
 }
 
 #contact-form textarea {
 	font-size: 18px;
-	padding: 6px;
-	width: 65%;
-	border: none;
 	height: 150px;
-	font-family: 'raleway';
-	border-radius: 2px;
-	position: relative;
-	display: block;
-	z-index: 100;
-	margin: 0px;
 }
 
 #contact-form .button {
-	background-color: #7FBCFA;
-	border: 1px solid #2BA1D5;
-	border-radius: 2px;
-	padding: 7px 25px;
-	width: auto;
-	color: #fff;
-	cursor: pointer;
-	transition: .2s;
-	vertical-align: top;
-}
 
-#contact-form .button:hover {
-	background-color: #6EB1F5;
-	transition: .2s;
 }
 
 #contact-loading {
@@ -454,6 +475,10 @@ p {
 	margin-bottom: 30px;
 }
 
+.top-margin {
+	margin-top: 30px;
+}
+
 .section {
 	padding: 45px 0px;
 	border-bottom: 2px dashed #ccc;
@@ -482,4 +507,31 @@ date {
 
 a {
 	color: #3481e0;
+}
+
+.blue-button {
+	background-color: #7FBCFA;
+	border: 1px solid #2BA1D5;
+	border-radius: 2px;
+	padding: 5px 20px;
+	width: auto;
+	color: #fff;
+	cursor: pointer;
+	transition: .2s;
+	vertical-align: top;
+	font-family: 'roboto';
+	font-size: 18px;
+	outline: none;
+	display: inline-block;
+	text-decoration: none;
+	line-height: normal;
+}
+
+.blue-button:hover {
+	background-color: #6EB1F5;
+	transition: .2s;
+}
+
+#disqus_thread {
+	margin-top: 38px;
 }

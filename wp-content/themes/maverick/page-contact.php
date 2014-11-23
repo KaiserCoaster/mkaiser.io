@@ -5,29 +5,28 @@
 	<?php while(have_posts()): the_post() ?>
 	
 		<div class="section">
-			<h2 class="bottom-margin"><?php the_title() ?></h2>
-			<p class="bottom-margin">Send me a message and I'll reply back as soon as possible.</p>
+			<h1 class="bottom-margin"><?php the_title() ?></h1>
+			<div class="bottom-margin"><?php the_content() ?></div>
 			<form id="contact">
 				<ul id="contact-form">	
 					<li>
 						<label for="contact-name">Name</label>
-						<input id="contact-name" type="text" />
+						<input id="contact-name" class="textbox" type="text" />
 					</li>
 					<li>
 						<label for="contact-email">Email</label>
-						<input id="contact-email" type="email" />
+						<input id="contact-email" class="textbox" type="email" />
 					</li>
 					<li>
 						<label for="contact-message">Message</label>
-						<textarea id="contact-message"></textarea>
+						<textarea id="contact-message" class="textbox"></textarea>
 					</li>
 					<li>
-						<input type="submit" value="Send" class="button" id="contact-send" />
+						<input type="submit" value="Send" class="button blue-button" id="contact-send" />
 						<div id="contact-loading"><img src="/assets/loading.gif" /></div>
 					</li>
 				</ul>
 			</form>
-			<?php the_content() ?>
 		</div>
 		
 	<?php endwhile; ?>

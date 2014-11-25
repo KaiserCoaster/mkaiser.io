@@ -11,7 +11,7 @@
 		
 	<?php endwhile; ?>
 	
-	<ul id="resume" class="blue-button">
+	<!--<ul id="resume" class="blue-button">
 		<li id="resume-thumbnail">
 			<img src="/assets/resume-lines.png" />
 		</li>
@@ -22,7 +22,7 @@
 				I'll be happy to provide full contact details at request.
 			</span>
 		</li>
-	</ul>
+	</ul>-->
 
 </main>
 

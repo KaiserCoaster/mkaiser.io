@@ -74,14 +74,13 @@ nav li {
 }
 
 .nav_button {
-	width: 36px;
 	margin: 6px;
 }
 
 .nav_title {
 	font-size: 30px;
 	margin: 0px 8px;
-	padding-top: 10px;
+	padding-top: 8px;
 }
 
 #sidebar {

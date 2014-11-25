@@ -13,6 +13,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:300,100|Raleway:300' rel='stylesheet' type='text/css'>
 	<link href='/css/foundation-icons.css' rel='stylesheet' type='text/css'>
 	<?php wp_head() ?>
+	<script type="text/javascript" src="/js/blur.min.js"></script>
 	<script type="text/javascript">
 		
 		(function($){
@@ -111,61 +112,15 @@
 </header>
 
 <nav>
-	<!--<?php wp_nav_menu(); ?>-->
 	<ul>
 		<li>
 			<a href="#" id="menu-norm">
 				<img src="/assets/menu.svg" class="nav_button" onerror="this.onerror=null; this.src='/assets/menu.png'" />
 			</a>
 		</li>
-		<li>
-			<a href="/">
-				<img src="/assets/home.svg" class="nav_button" onerror="this.onerror=null; this.src='/assets/home.png'" />
-				<div class="nav_title">Home</div>
-			</a>
-		</li>
-		<li>
-			<a href="/about-me/">
-				<img src="/assets/about.svg" class="nav_button" onerror="this.onerror=null; this.src='/assets/about.png'" />
-				<div class="nav_title">About Me</div>
-			</a>
-		</li>
-		<li>
-			<a href="/blog/">
-				<img src="/assets/blog.svg" class="nav_button" onerror="this.onerror=null; this.src='/assets/blog.png'" />
-				<div class="nav_title">Blog</div>
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				<img src="/assets/projects.svg" class="nav_button" onerror="this.onerror=null; this.src='/assets/projects.png'" />
-				<div class="nav_title">Projects</div>
-			</a>
-		</li>
-		<!--<li>
-			<a href="#">
-				<img src="/assets/photography.svg" class="nav_button" onerror="this.onerror=null; this.src='/assets/photography.png'" />
-				<div class="nav_title">Photography</div>
-			</a>
-		</li>-->
-		<!--<li>
-			<a href="#">
-				<img src="/assets/photography2.svg" class="nav_button" onerror="this.onerror=null; this.src='/assets/photography.png'" />
-				<div class="nav_title">Photography</div>
-			</a>
-		</li>-->
-		<li>
-			<a href="/photography/">
-				<img src="/assets/photography3.svg" class="nav_button" onerror="this.onerror=null; this.src='/assets/photography.png'" />
-				<div class="nav_title">Photography</div>
-			</a>
-		</li>
-		<li>
-			<a href="/contact/">
-				<img src="/assets/contact.svg" class="nav_button" onerror="this.onerror=null; this.src='/assets/contact.png'" />
-				<div class="nav_title">Contact</div>
-			</a>
-		</li>
+		
+		<?php wp_nav_menu( array('theme_location' => 'main_menu', 'container' => false, 'link_before' => "<div class='nav_button'></div><div class='nav_title'>", 'link_after' => "</div>", 'items_wrap' => '%3$s') ); ?>
+
 	</ul>
 </nav>
 

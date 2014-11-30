@@ -5,27 +5,19 @@
 	<?php while(have_posts()): the_post() ?>
 	
 		<div class="section">
-			<?php if( has_post_thumbnail() ) {
-				$img = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' ); 
-				$cust_pos = get_post_custom_values( 'mk_page_featured_image_pos_y' );
-				$pos = count($cust_pos) > 0 ? $cust_pos[0] : "top"; ?>
-				<div style="background-image:url(<?=$img[0]?>); background-position-y: <?=$pos?>" class="featured_image">
-					<h1 class="featured_title"><?php the_title() ?></h1>
-				</div>
-				<?php
-			}
-			else { ?>
-				<h1 class="bottom-margin"><?php the_title() ?></h1>
-			<?php } ?>
-			<?php the_content() ?>
+			<?php mk_header(); ?>
+			<div class="bottom-margin"><?php the_content() ?></div>
+			
+			<a href="/about-me/" class="blue-button">Find out more about me</a>
+			<a href="/contact/" class="blue-button">Contact Me</a>
 		</div>
 		
 		<div class="section">
-			<h2 class="bottom-margin">Recent Blog Posts</h2>
+			<h2 class="bottom-margin"><a href="/blog/">Recent Blog Posts</a></h2>
 			<ul id="recent_blogs" class="grid">
 				<?php
 				$walk = new Grid_Walker();
-				$args = array( 'numberposts' => '5');
+				$args = array( 'numberposts' => '5', 'post_status' => 'publish');
 				$recent_posts = wp_get_recent_posts( $args, OBJECT );
 				echo $walk->walk($recent_posts, -1);
 				?>
@@ -33,7 +25,7 @@
 		</div>
 		
 		<div class="section">
-			<h2 class="bottom-margin">Featured Projects</h2>
+			<h2 class="bottom-margin"><a href="/projects/">Featured Projects</a></h2>
 			<ul id="featured_projects" class="grid">
 				<?php
 				$walk = new Grid_Walker();

@@ -10,7 +10,7 @@ Template Name: Projects Page Template
 	<?php while(have_posts()): the_post() ?>
 	
 		<div class="section">
-			<h1 class="bottom-margin"><?php the_title() ?></h1>
+			<?php mk_header(); ?>
 			<div class="bottom-margin"><?php the_content() ?></div>
 			
 			<ul class="grid">

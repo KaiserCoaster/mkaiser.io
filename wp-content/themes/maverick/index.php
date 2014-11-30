@@ -17,7 +17,7 @@
 					<?php the_date(); ?>
 				</date>
 				<span class="the_post">
-					<?php the_content(__('Continue Reading')); ?>
+					<?php the_excerpt(); ?>
 				</span>
 
 			</article>

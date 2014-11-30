@@ -23,29 +23,22 @@ function remove_admin_login_header() {
 }
 
 
-// No longer using posts for Projects
-/*
-function exclude_category($query) {
-	if ( $query->is_home() ) {
-		$query->set('cat', '-4');
+
+
+
+function mk_header() {
+	if( has_post_thumbnail() ) {
+		$img = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' ); 
+		$cust_pos = get_post_custom_values( 'mk_page_featured_image_pos_y' );
+		$pos = count($cust_pos) > 0 ? $cust_pos[0] : "top";
+		echo "<div style=\"background-image:url(" . $img[0] . "); background-position-y: " . $pos . "\" class='featured_image'>";
+			echo "<h1 class='featured_title'>" . the_title(null, null, false) . "</h1>";
+		echo "</div>";
 	}
-	else if($query->is_page('projects')) {
-		$query->set('cat', '4');
+	else {
+		echo "<h1 class='bottom-margin'>" . the_title(null, null, false) . "</h1>";
 	}
-	return $query;
 }
-add_filter('pre_get_posts', 'exclude_category');
-*/
-
-
-/*
-function my_wp_nav_menu_args( $args = '' ) {
-	if()
-	return $args;
-}
-add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );*/
-
-
 
 
 
@@ -53,7 +46,7 @@ add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );*/
 
 
 class Grid_Walker extends Walker_page {
-	function start_el(&$output, $obj, $depth, $args, $current_obj) {
+	function start_el(&$output, $obj, $depth = 0, $args = array(), $current_object_id = 0) {
 		$desc = false;
 		if($obj->post_type == "post") {
 			$desc = mysql2date('j M Y', $obj->post_date);

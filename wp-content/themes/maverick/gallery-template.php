@@ -65,20 +65,21 @@ Template Name: Gallery Template
 						$second_query->the_post();
 						$attachments	= get_post_thumbnail_id( $post->ID );
 						if ( empty ( $attachments ) ) {
-							$attachments = get_children( 'post_parent='.$post->ID.'&post_type=attachment&post_mime_type=image&numberposts=1' );
-							$id = key( $attachments );
-							$image_attributes = wp_get_attachment_image_src( $id, 'medium' );
+							$attachments = get_posts( array(
+								'post_parent' => $post->ID,
+								'post_type' => 'attachment',
+								'post_mime_type' => 'image',
+								'posts_per_page' => 1,
+								'orderby' => 'menu_order',
+								'order' => 'ASC'
+								)
+							);
+							//$id = key( $attachments );
+							$image_attributes = wp_get_attachment_image_src( $attachments[0]->ID, 'medium' );
 						} else {
 							$image_attributes = wp_get_attachment_image_src( $attachments, 'medium' );
 						}
-						if ( 1 == $gllr_options['border_images'] ) {
-							$gllr_border = 'border-width: ' . $gllr_options['border_images_width'].'px; border-color:'.$gllr_options['border_images_color'].'; padding:0;';
-							$gllr_border_images = $gllr_options['border_images_width'] * 2;
-						} else {
-							$gllr_border = 'padding:0;';
-							$gllr_border_images = 0;
-						}
-						$count++; ?>
+						?>
 						
 						<li>
 							<a href="<?php echo $permalink; echo basename( get_permalink( $post->ID ) ); ?>" title="<?php echo htmlspecialchars( $post->post_title ); ?>">
@@ -87,7 +88,7 @@ Template Name: Gallery Template
 								</div>
 								<div class="grid-text">
 									<?php echo htmlspecialchars( $post->post_title ); ?>
-									<div class="grid-description"><?php echo the_excerpt_max_charlength( 100 ); ?></div>
+									<!--<div class="grid-description"><?php echo the_excerpt_max_charlength( 100 ); ?></div>-->
 								</div>
 							</a>
 						</li>

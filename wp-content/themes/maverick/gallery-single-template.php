@@ -22,7 +22,7 @@
 					<h1 class="bottom-margin"><?php the_title(); ?></h1>
 					<div class="bottom-margin"><?php the_content(); ?></div>
 		
-					<?php the_content(); 
+					<?php 
 					$posts = get_posts( array(
 						"showposts"			=> -1,
 						"what_to_show"		=> "posts",
@@ -47,7 +47,7 @@
 								?>
 								
 								<li>
-									<a href="<?php echo $image_attributes_large[0]; ?>" rel="gallery_fancybox" title="<?php echo get_post_meta( $attachment->ID, $key, true ); ?>">
+									<a href="<?php echo $image_attributes_large[0]; ?>" rel="gallery_fancybox<?php if ( 0 == $gllr_options['single_lightbox_for_multiple_galleries'] ) echo '_' . $post->ID; ?>" title="<?php echo get_post_meta( $attachment->ID, $key, true ); ?>" data-caption="<?php echo $attachment->post_excerpt ?>">
 										<div class="grid-image">
 											<img  alt="<?php echo get_post_meta( $attachment->ID, $alt_tag_key, true ); ?>" title="<?php echo get_post_meta( $attachment->ID, $key, true ); ?>" src="<?php echo $image_attributes[0]; ?>" rel="<?php echo $image_attributes_full[0]; ?>" width="100%" />
 										</div>
@@ -61,7 +61,7 @@
 					<?php
 					} else {
 						?>
-						<div class="gallery_box_single">
+						<div class="gallery_box_single bottom-margin">
 							<p class="not_found"><?php _e( 'Sorry, nothing found.', 'gallery' ); ?></p>
 						</div>
 					<?php
@@ -81,7 +81,7 @@
 				$return_link = $gllr_options["return_link_url"];
 			}
 			?>
-			<a href="<?php echo $return_link ?>" class="blue-button"><?php echo $gllr_options['return_link_text']; ?></a>
+			<a href="<?php echo $return_link ?>" class="blue-button">← <?php echo $gllr_options['return_link_text']; ?></a>
 		<?php
 		}
 		?>
@@ -100,7 +100,7 @@
 					'speedIn'				:	500, 
 					'speedOut'				:	300,
 					'titleFormat'			: function( title, currentArray, currentIndex, currentOpts ) {
-						return '<div id="fancybox-title-inside">' + ( title.length ? '<span id="bws_gallery_image_title">' + title + '</span><br />' : '' ) + '<span id="bws_gallery_image_counter"><?php _e( "Image", "gallery"); ?> ' + ( currentIndex + 1 ) + ' / ' + currentArray.length + '</span></div><?php if( get_post_meta( $post->ID, 'gllr_download_link', true ) != '' ){?><a id="bws_gallery_download_link" href="' + $( currentOpts.orig ).attr('rel') + '" target="_blank"><?php echo $gllr_download_link_title; ?> </a><?php } ?>';
+						return '<div id="fancybox-title-inside">' + ( title.length ? '<span id="bws_gallery_image_title">' + title + '</span><br />' : '' ) + $(currentArray[currentIndex]).data('caption') + '<br /><span id="bws_gallery_image_counter">' + ( currentIndex + 1 ) + ' / ' + currentArray.length + '</span></div><?php if( get_post_meta( $post->ID, 'gllr_download_link', true ) != '' ){?><a id="bws_gallery_download_link" href="' + $( currentOpts.orig ).attr('rel') + '" target="_blank"><?php echo $gllr_download_link_title; ?> </a><?php } ?>';
 					}<?php if ( $gllr_options['start_slideshow'] == 1 ) { ?>,
 					'onComplete':	function() {
 						clearTimeout( jQuery.fancybox.slider );

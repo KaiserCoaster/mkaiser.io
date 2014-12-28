@@ -10,7 +10,7 @@
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" />
 	<link rel="stylesheet" media="(max-width: 1100px)" href="/wp-content/themes/maverick/mobile_style.css" />
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:300,100|Raleway:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:300,100|Raleway:300' rel='stylesheet' type='text/css'>
 	<link href='/css/foundation-icons.css' rel='stylesheet' type='text/css'>
 	<?php wp_head() ?>
 	<script type="text/javascript" src="/js/blur.min.js"></script>
@@ -89,11 +89,76 @@
 				        $({deg: 0}).animate({deg: angle}, args);
 				    });
 				};
+				
+				
+				
+				var Snowstorm = function() {
+					console.log("Letting it snow..");
+					this.flakes = [];
+					this.generate();
+					var $this = this;
+					this.interval = window.setInterval(function() { $this.loop(); }, (1000/15));
+				};
+				Snowstorm.prototype.generate = function() {
+					var num = Math.round((window.innerHeight * window.innerWidth) * .00016);
+					for(i = 0; i < num; i++) {
+						this.flakes[i] = new Flake();
+						this.flakes[i].randomize();
+					}
+				};
+				Snowstorm.prototype.loop = function() {
+					for(i = 0; i < this.flakes.length; i++) {
+						this.flakes[i].update();
+					}
+				};
+				var Flake = function() {
+					this.el = $("<div />").appendTo("body");
+					this.radius = 1;
+					this.x = 0;
+					this.y = 0;
+					this.dx = 0;
+					this.dy = 0;
+				};
+				Flake.prototype.randomize = function() {
+					this.radius = rand(5, 30)/10;
+					this.y = rand(0, window.innerHeight);
+					this.x = rand(0, window.innerWidth);
+					this.el.css({	'width': (this.radius*2) + 'px',
+									'height': (this.radius*2) + 'px',
+									'border-radius': this.radius + 'px',
+									'top': this.y + 'px',
+									'left': this.x + 'px',
+					}).addClass('snowflake');
+					this.dx = rand(-10, 10)/10;
+					this.dy = rand(18, 24)/10;
+				};
+				Flake.prototype.update = function() {
+					this.x += this.dx;
+					this.y += this.dy;
+					this.el.css({	'top': this.y + 'px',
+									'left': this.x + 'px',
+					});
+					if(this.y > window.innerHeight) {
+						this.y = 0;
+						this.x = rand(0, window.innerWidth);
+					}
+				};
+				var rand = function(min, max) {
+					return Math.floor(Math.random()*(max-min+1)+min);
+				};
+				var letItSnow = new Snowstorm();
 		
 			});
 		})(jQuery);
 		
 	</script>
+	<style>
+		.snowflake {
+			position: fixed;
+			display: block;
+			background-color: #fff;
+		}
+	</style>
 </head>
 
 <body>

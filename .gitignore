@@ -117,8 +117,8 @@ wp-content/themes/twentyfourteen/
 node_modules/
 scripts/config.php
 
-assets/resume.png
 grabmac/
 sandbox/
+clients/
 
 mkaiser
